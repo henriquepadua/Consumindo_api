@@ -23,4 +23,18 @@ class MoedaState{
       result: '0',
     );
   }
+
+  MoedaState copyWith({
+    List<MoedaModel>? moedas,
+    MoedaModel? moedaIn,
+    MoedaModel? moedaOut,
+    String? result,
+  }){
+    return MoedaState(
+        moedas: moedas ?? this.moedas,
+        moedaIn: moedaIn ?? this.moedaIn,
+        moedaOut: moedaOut ?? this.moedaOut,
+        result: result ?? this.result,
+    );
+}
 }

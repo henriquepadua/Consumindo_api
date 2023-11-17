@@ -1,3 +1,4 @@
+import '../models/moeda_model.dart';
 class MoedaModel{
   final String name;
   final String code;
